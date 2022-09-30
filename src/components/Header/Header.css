@@ -1,0 +1,10 @@
+
+
+.app__wrapper_info button:hover{
+    background: var(--color-white);
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+

@@ -18,7 +18,7 @@
 }
 
 body{
-  background: var(--color-white);
+  background: #E5E5E5;
 }
 
 a{
@@ -26,10 +26,75 @@ a{
   text-decoration: none;
 }
 
+.section__padding {
+  padding: 1rem 10rem;
+}
+
 .flex__center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 80vh;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.app__wrapper_img img {
+  width: 100%;
+}
+
+.custom__button{
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-family: var(--font-base);
+  letter-spacing: 0.04em;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  border-radius: 55px;
+  width:200px;
+  margin-top: 20px;
+}
+
+.headtext__mulish{
+  font-family: var(--font-base);
+  color: var(--color-title);
+  font-size: 41px;
+  line-height: 56px;
+}
+
+.p__mulish{
+  font-family: var(--font-base);
+  color: var(--color-text);
+  font-size: 21px;
+  margin-top: 20px;
 }
 
 .slide-bottom {
@@ -59,3 +124,70 @@ a{
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .custom__button,
+  .p__mulish {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .headtext__mulish{
+    font-size: 120px;
+    line-height: 210px;
+  }
+
+  .custom__button{
+    width:400px;
+    line-height: 100px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1150px) {
+    .app__wrapper{
+      flex-direction: column;
+    }
+
+    .app__wrapper_info{
+      align-items: center;
+      text-align: center;
+    }
+
+    .app__wrapper_img{
+      margin: 0 0 5rem 0;
+      padding-top: 2rem;;
+    }
+
+    .app__wrapper_img img{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+  .section__padding{
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .p__mulish{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .p__mulish{
+    font-size: 12px;
+  }
+
+  .headtext__mulish{
+    font-size: 45px;
+    line-height: 70px;
+  }
+}
