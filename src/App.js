@@ -1,4 +1,5 @@
 import React from 'react';
+import Articles from './components/Articles/Articles';
 import Download from './components/Download/Download';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
@@ -14,7 +15,8 @@ function App() {
       <Services />
       <Providers />
       <Download />
-      < Testimonials />
+      <Testimonials />
+      <Articles />
     </div>
   );
 }

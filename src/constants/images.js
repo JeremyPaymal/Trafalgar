@@ -11,6 +11,9 @@ import services04 from '../assets/services-4.png';
 import services05 from '../assets/services-5.png';
 import services06 from '../assets/services-6.png';
 import testimonials from '../assets/testimonials.png';
+import article1 from '../assets/article-1.png';
+import article2 from '../assets/article-2.png';
+import article3 from '../assets/article-3.png';
 
 export default {
     logo,
@@ -25,5 +28,8 @@ export default {
     services04,
     services05,
     services06,
-    testimonials
+    testimonials,
+    article1,
+    article2,
+    article3
 };
