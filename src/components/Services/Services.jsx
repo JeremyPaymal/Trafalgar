@@ -16,7 +16,6 @@ const Services = () => {
         doctors you can consult with us which type of service is suitable for
         your health
       </p>
-
       <div className="app__wrapper services__container">
         {
             data.map((({id, imgUrl, title, paragraph}) => {
@@ -35,6 +34,7 @@ const Services = () => {
             }))
         }
       </div>
+      <button className="services__btn custom__button2">Learn more</button>
     </div>
   );
 };

@@ -14,15 +14,13 @@ hr{
     margin: 40px auto;
 }
 
-.services__title p{
-    font-size: 18px;
-}
-
 .services__container{
+    position: relative;
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    
 }
 
 .services__item{
@@ -31,6 +29,7 @@ hr{
     border-radius:20px;
     width: 350px;
     height: 350px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 }
 
 .services__item-images{
@@ -54,6 +53,11 @@ hr{
     font-size: 16px;
     line-height: 28px;
 }
+
+.services__btn{
+    margin-top: 72px;
+}
+
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */ 
 
