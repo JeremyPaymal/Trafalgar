@@ -9,6 +9,11 @@
   --color-white: #ffffff;
 }
 
+.active-scroll-spy {
+  font-weight: bold;
+  
+}
+
 *{
   box-sizing: border-box;
   font-family: var(--font-base);

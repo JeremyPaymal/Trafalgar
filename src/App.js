@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollSpy from "react-ui-scrollspy";
 import Articles from './components/Articles/Articles';
 import Download from './components/Download/Download';
 import Footer from './components/Footer/Footer';
@@ -13,12 +14,14 @@ function App() {
     <div>
       <Navbar/>
       <div style={{overflowY:"scroll", height:"80px"}}></div>
+      <ScrollSpy>
       <Header />
       <Services />
       <Providers />
       <Download />
       <Testimonials />
       <Articles />
+      </ScrollSpy>
       <Footer />
     </div>
   );

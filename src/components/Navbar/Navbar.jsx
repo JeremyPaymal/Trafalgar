@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import {MdOutlineHealthAndSafety} from 'react-icons/md';
-import images from '../../constants/images'
+import images from '../../constants/images';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -26,12 +26,13 @@ window.addEventListener('scroll', changeNavbarColor);
             <img src={images.logo} alt='app-logo'/>
         </div>
         <ul className='app__navbar-links'>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#services'>Find a doctor</a></li>
-            <li><a href='#download'>Apps</a></li>
-            <li><a href='#testimonials'>Testimonials</a></li>
-            <li><a href='#providers'>About us</a></li>
+            <li><a data-to-scrollspy-id="home"href='#home'>Home</a></li>
+            <li><a data-to-scrollspy-id="services" href='#services'>Find a doctor</a></li>
+            <li><a data-to-scrollspy-id="download" href='#download'>Apps</a></li>
+            <li><a data-to-scrollspy-id="testimonials"href='#testimonials'>Testimonials</a></li>
+            <li><a data-to-scrollspy-id="providers" href='#providers'>About us</a></li>
         </ul>
+      
 
 
         <div className='app__navbar-smallscreen'>
