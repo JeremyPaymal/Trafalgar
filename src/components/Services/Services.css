@@ -24,6 +24,7 @@ hr{
 }
 
 .services__item{
+    margin: 0 auto 0 auto;
     background: var(--color-white);
     padding: 1.3rem;
     border-radius:20px;
@@ -74,5 +75,10 @@ hr{
     .services__container{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .services__item{
+        width: 280px;
     }
 }

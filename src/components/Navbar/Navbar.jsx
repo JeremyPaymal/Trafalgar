@@ -8,18 +8,29 @@ const Navbar = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
+    const [colorChange, setColorchange] = useState(false);
+const changeNavbarColor = () =>{
+	if(window.scrollY >= 80){
+	setColorchange(true);
+	}
+	else{
+	setColorchange(false);
+	}
+};
+window.addEventListener('scroll', changeNavbarColor);
+
 
   return (
-    <nav className='app__navbar'>
+    <nav className={colorChange ? 'app__navbar colorChange' : 'app__navbar'}>
         <div className='app__navbar-logo'>
             <img src={images.logo} alt='app-logo'/>
         </div>
         <ul className='app__navbar-links'>
-            <li>Home</li>
-            <li>Find a doctor</li>
-            <li>Apps</li>
-            <li>Testimonials</li>
-            <li>About us</li>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#services'>Find a doctor</a></li>
+            <li><a href='#download'>Apps</a></li>
+            <li><a href='#testimonials'>Testimonials</a></li>
+            <li><a href='#providers'>About us</a></li>
         </ul>
 
 

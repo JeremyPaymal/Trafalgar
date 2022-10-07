@@ -1,4 +1,5 @@
 import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 import illustration01 from '../assets/trafalgar-illustration-1.png';
 import illustration02 from '../assets/trafalgar-illustration-2.png';
 import illustration03 from '../assets/trafalgar-illustration-3.png';
@@ -17,6 +18,7 @@ import article3 from '../assets/article-3.png';
 
 export default {
     logo,
+    logo2,
     illustration01,
     illustration02,
     illustration03,

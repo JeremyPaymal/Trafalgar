@@ -19,6 +19,7 @@ const Providers = () => {
           on mobile and online for everyone. To us, it’s not just work. We take
           pride in the solutions we deliver
         </p>
+        <button className="providers__btn custom__button2" style={{marginTop: "40px"}}>Learn more</button>
       </div>
     </div>
   );

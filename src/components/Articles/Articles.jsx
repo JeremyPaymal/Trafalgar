@@ -43,10 +43,11 @@ const Articles = () => {
 
                             <a href='/'>Read more <span class="arrow"></span></a>
                         </div>
-                    </article>
+                    </article>                 
                 )
             }))}
         </div>
+        <button className="articles__btn custom__button2">View all</button>
     </div>
   )
 }
