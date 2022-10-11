@@ -21,6 +21,6 @@ As a new and novice front end web developer, I practice my skills everyday. I wa
 <hr>
 Here's the possible improvement I would like to make:<br>
 <br>
-- Add some animation to make the UX better
+- Add some animation to make the UX better<br>
 - As you can see on the figma link, there are a few background images, so I want to add it. 
 - The app is responsive except for the biggest screen, so I need to add this too. 
